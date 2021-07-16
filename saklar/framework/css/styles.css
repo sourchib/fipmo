@@ -1,0 +1,163 @@
+/* Landing and Login and Registrasi */
+.bg_load{
+    background-color: #0083FF;
+    height: 100%;
+    text-align: center;
+}
+
+.img_load{
+    padding-top: 80%;
+}
+
+.layout_container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+}
+
+.login-lupa-password{
+    float: right;
+}
+
+.button-size{
+    width: 70%;
+    margin: auto;
+}
+
+.text-footer{  
+  position: relative;  
+  text-align: center;
+  font-size: 12px auto;
+  font-weight: bold;
+  color:rgb(207, 207, 207); 
+}
+
+/* End  */
+
+/* Menu Fipmo */
+
+.layout-lagout{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0.5rem;
+}
+
+.lingkaran-kedalaman{
+    width: 55px;
+    height: 55px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(112, 112, 112);
+    margin: auto;
+    padding-top: 4px;
+}
+
+/* .bg-kedalaman{
+    position: absolute;
+    left: 50%;
+    bottom: 140px;
+}​ */
+
+#box {
+    border-radius: 100%;
+    background: #0083FF;
+    border: 3px solid #ffffff;
+
+    box-shadow: 0 0 0 3px #ffffff, 
+                0 0 0 3px #000000,
+                0 0 0 5px #0083FF,
+                0 0 30px rgb(112, 112, 112);
+    width: 180px ;  
+    height: 180px;
+    margin: 10px auto;
+    position: relative;
+}
+
+/* Image */
+/* Image Hover dan Layout Menu*/
+.img-saklar{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: url("../assets/gambar/icon-saklar.png") no-repeat;
+  }
+  
+  .img-saklar:hover{          
+    background-color: #0083FF;
+    box-shadow: 0 0 10px rgb(177, 177, 177);
+  }
+  
+  .img-cuaca{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background: url("../assets/gambar/icon-hujan.png") no-repeat;
+  }
+  
+  .img-cuaca:hover{
+    width: 50px;
+    height: 50px;
+    background-color: #0083FF;
+    box-shadow: 0 0 10px rgb(177, 177, 177);
+  }
+  
+  .img-ph{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background: url("../assets/gambar/icon-ph.png") no-repeat;
+  }
+  
+  .img-ph:hover{
+    background-color: #0083FF;
+    box-shadow: 0 0 10px rgb(177, 177, 177);
+  }
+  
+  .img-kolam {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background: url("../assets/gambar/icon-kedalaman.png") no-repeat;
+  }
+  .img-kolam:hover{
+    background-color: #0083FF;
+    box-shadow: 0 0 10px rgb(177, 177, 177);
+    
+  }
+  .menu-layout{ 
+      margin: auto;
+      line-height: 13px;
+	padding-top:30px;
+	padding-left:15px;
+  }
+
+  /* Saklar */
+  .img-relay-on{
+    background: url("../assets/gambar/on.png") no-repeat;
+  }
+
+  .img-relay-off{
+    background: url("../assets/gambar/off.png") no-repeat;
+  }
+
+  .button-relay {     
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;        
+}
+
+/* ph */
+.ph-kotak{
+    width: 100%;
+    height: 150px;
+    border-radius: 20%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(112, 112, 112);
+    text-align: center;
+    line-height:0vmin;
+    
+    /* margin-right: 200px; */
+    
+}
