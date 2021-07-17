@@ -29,6 +29,7 @@
             <a class="link external" href="http://47.254.248.173/fipmo/" style="text-decoration: none; font-weight: bold;
             float: right;
             ">Logout</a>
+            <span id="tanggal"></span>
           </div>
         <div class="block grid-resizable-demo"> 
             <!-- Reponsive Center Atas -->
@@ -41,10 +42,9 @@
                         <h3 style="margin-top: -8px;">Kolam</h3>
                     </div><br><br>
                     <img width="18%" style="float: right;" src="framework/assets/gambar/elipse1.png" alt="elipse1">
-                    <div id="box" style="line-height: 0px; padding-top: 22px;">
-                      <p id="kedalaman" style="font-size: 55px; text-align: center; color:whitesmoke;
-                      "></p>  
-                      <p style="margin-top: -12px; font-size: 30; text-align: center; color:whitesmoke;">Centimeter</p>                      
+                    <div id="box" style="line-height: 0px; padding-top: 20px;">
+                      <p id="kedalaman" style="font-size: 55px; text-align: center; color:whitesmoke;"></p>  
+                      <p style="margin-top: -10px; font-size: 30; text-align: center; color:whitesmoke;">Centimeter</p>                      
                     </div>
                     <div style="margin-top: -30px;">
                       <img width="22%" src="framework/assets/gambar/elipse2.png" alt="elipse2">
@@ -82,7 +82,7 @@
         <div class="block">            
         <div class="menu-layout">
           <div class="block">
-            <div class="row " style="line-height:4px;">
+            <div class="row " style="line-height:4px; margin-top: -30px;">
               <div class="col">
                 <a type="button" href="http://47.254.248.173/fipmo/saklar/saklar.php" class="link external"><div class="img-saklar"></div></a>
                 <a type="button" class="text-decoration-none text-footer-img text-center text-white link external" href="http://47.254.248.173/fipmo/saklar/saklar.php">Saklar</a>
@@ -138,6 +138,11 @@
         //}
    // };
   </script>
+    <script>
+      var n = new Date();
+      var tanggal = n.toLocaleString();
+      document.getElementById("tanggal").innerHTML = tanggal;
+    </script>
   <script src="framework/js/realtime.js"></script>
   <!-- Framework7 library -->
   <script src="framework/framework7/framework7-bundle.min.js"></script>

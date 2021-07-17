@@ -36,18 +36,20 @@
                     <h3>Hello, Samsul</h3>
                     <p style="margin-top: -8px;" >Monitoring Kolam Ikan</p>
                     <div style="color:#0083FF ;">
-                        <h2>Cuaca, di Kolam</h2>                        
+                        <h2>Cuaca Kolam</h2>                        
                     </div> <br>
                     <img width="18%" style="float: right; margin-left: 10px" src="framework/assets/gambar/elipse1.png" alt="elipse1" >
                     <div class="text-center" style="padding-left: 70px;"> 
                         <h4>Banggle,Blitar</h4>
+                        <span style="text-align: center;" id="tanggal"></span>
                    <div style="text-align: center;"> 
-                    <img width="70%" src="framework/assets/gambar/fluent_weather-drizzle-20-regular.png" alt="hujan">
-                  </div>
+                	<img width="50%" id="gambar-cuaca" src="#"  alt="cuaca">  
+                  <!--  <img width="70%" src="framework/assets/gambar/fluent_weather-drizzle-20-regular.png" alt="hujan"> -->
+		              </div>
                     </div>
                     <div style="text-align: center; margin-left: 0px">
                       <p id="text"></p>
-                      <h1 style="font-weight: bold; font-size: 40px;" id="air"></h1>                      
+                      <h1 style="font-weight: bold; font-size: 30px;" id="air"></h1>                      
                     </div>
 
                   <img width="15%" style="float: left; margin-left: 50px; margin-bottom: 20px;" src="framework/assets/gambar/elipse1.png" alt="elipse1" >
@@ -62,7 +64,7 @@
         <div class="block">            
         <div class="menu-layout">
           <div class="block">
-            <div class="row " style="line-height:4px;">
+            <div class="row " style="line-height:4px; margin-top: -30px;">
               <div class="col">
                 <a type="button" href="http://47.254.248.173/fipmo/saklar/saklar.php" class="link external"><div class="img-saklar"></div></a>
                 <a type="button" class="text-decoration-none text-footer-img text-center text-white link external" href="http://47.254.248.173/fipmo/saklar/saklar.php">Saklar</a>
@@ -93,6 +95,11 @@
       </div>                
     </div> 
   </div>
+  <script>
+    var n = new Date();
+    var tanggal = n.toLocaleString();
+    document.getElementById("tanggal").innerHTML = tanggal;
+  </script>
   <script src="framework/js/realtime.js"></script>
   <!-- Framework7 library -->
   <script src="framework/framework7/framework7-bundle.min.js"></script>

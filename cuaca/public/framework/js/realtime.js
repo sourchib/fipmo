@@ -6,11 +6,13 @@ var content;
 var img = "";
 if (message.data <= 1900) {
         content = 'Hujan'; 
-        img = "../assets/hujan.gif"
+        img = "/framework/assets/yes.gif"
+	document.getElementById("gambar-cuaca").src = img;	
         document.getElementById("air").innerHTML = content;  
     }else{
       content = 'Tidak hujan';    
-      img = "../assets/tidak_hujan.gif"  
+     img = "/framework/assets/no.gif"  
+document.getElementById("gambar-cuaca").src = img;
       document.getElementById("air").innerHTML = content; 
     }
 });

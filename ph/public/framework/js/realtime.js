@@ -1,19 +1,20 @@
 var text = document.getElementById('text');
 var socket = io.connect('47.254.248.173:8887');
 var gauge = new LinearGauge({
-    renderTo: 'gauge',
+renderTo: 'gauge',
     width: 120,
-    height: 270,
+    height: 300,
     valueBox: false,
-    minValue: 0,
-    maxValue: 16,
+    minValue: 1,
+    maxValue: 15,
     majorTicks: [
-        "0",
+        "1",
         "2",
         "3",
-        "5",
         "7",
+        "8",
         "9",
+        "10",
         "13",
         "15"
     ],
@@ -21,8 +22,8 @@ var gauge = new LinearGauge({
     strokeTicks: true,
     highlights: [
         {
-            "from": 0,
-            "to": 16,
+            "from": 1,
+            "to": 15,
             "color": "rgba(2, 128, 251)"
         }
     ],
@@ -34,13 +35,12 @@ var gauge = new LinearGauge({
     needleType: "arrow",
     needleWidth: 2,
     animationDuration: 1500,
-    animationRule: "linear",    
+    animationRule: "linear",
     tickSide: "left",
     numberSide: "left",
     needleSide: "left",
     barStrokeWidth: 5,
     barBeginCircle: false,
-    value: 75
 }).draw();
 socket.on('data', function(message) {
 text.innerHTML = message.data;

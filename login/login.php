@@ -74,7 +74,7 @@
                               <div class="button-size">
                                 <ul>
                                   <li>
-                                <button type="submit" name="login" class="col button button-round button-fill" value="Masuk">
+                                <button style="height: 50px;" type="submit" name="login" class="col button button-round button-fill" value="Masuk">
                                     Login</button>
                                   </li>
                                 </ul>

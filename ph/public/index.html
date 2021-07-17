@@ -22,14 +22,15 @@
   <script src="socket/socket.io.js"></script>
 </head>
 <body>
-  <div id="app">    
+  <div id="app">        
     <!-- Your main view, should have "view-main" class -->
     <div class="view view-main view-init safe-areas">       
       <div class="page"> 
-          <div class="layout-lagout" style="text-align: right;">
+          <div class="layout-lagout">
             <a class="link external" href="http://47.254.248.173/fipmo/" style="text-decoration: none;
-            font-weight: bold; ">Logout</a>
-          </div><br><br>
+            font-weight: bold; float: right; ">Logout</a>
+            <span id="tanggal"></span>
+          </div><br>
          <!-- <img width="7%" style="float:right ;margin-left: 30px;"src="framework/assets/gambar/elipse1.png" alt="elipse1">  -->
         <div class="block grid-resizable-demo"> 
             <!-- Reponsive Center Atas -->
@@ -75,7 +76,7 @@
           <div class="block">            
           <div class="menu-layout">
             <div class="block">
-              <div class="row " style="line-height:4px;">
+              <div class="row " style="line-height:4px; margin-top: -30px;">
                 <div class="col">
                   <a type="button" href="http://47.254.248.173/fipmo/saklar/saklar.php" class="link external"><div class="img-saklar"></div></a>
                   <a type="button" class="text-decoration-none text-footer-img text-center text-white link external" href="http://47.254.248.173/fipmo/saklar/saklar.php">Saklar</a>
@@ -107,6 +108,11 @@
       </div>                
     </div> 
   </div>
+  <script>
+    var n = new Date();
+    var tanggal = n.toLocaleString();
+    document.getElementById("tanggal").innerHTML = tanggal;
+  </script>
   <script src="framework/js/realtime.js"></script>
   <!-- Framework7 library -->
   <script src="framework/framework7/framework7-bundle.min.js"></script>

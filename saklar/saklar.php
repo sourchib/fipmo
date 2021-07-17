@@ -29,7 +29,7 @@
             <a  class="link external" href="/fipmo/login/keluar.php" style="text-decoration: none; 
             float: right; font-weight: bold;
             ">Logout</a>
-            
+            <span id="tanggal"></span>
           </div>
         <div class="block grid-resizable-demo"> 
             <!-- Reponsive Center Atas -->
@@ -42,8 +42,8 @@
                         <h3 style="margin-top: -8px;">Kolam</h3>
                     </div>  <br>
                     <!-- Content Fipmo -->                    
-                    <div class="text-center">
-                        <img width="78%" src="framework/assets/gambar/icon-air.png" alt="gambar kran air">                       
+                    <div class="text-center">                      
+                        <img width="74%" src="framework/assets/gambar/icon-air.png" alt="gambar kran air">                       
                         <div class="page-content" style="margin-top: -30px;">
                             <div class="block">
                                 <div class="row">
@@ -80,7 +80,7 @@
           <div class="block">            
           <div class="menu-layout">
             <div class="block">
-              <div class="row " style="line-height:4px;">
+              <div class="row " style="line-height:4px; margin-top: -30px;">
                 <div class="col">
                   <a type="button" href="/fipmo/saklar/saklar.php" class="link external"><div class="img-saklar"></div></a>
                   <a type="button" class="text-decoration-none text-footer-img text-center text-white link external" href="/fipmo/saklar/saklar.php">Saklar</a>
@@ -112,7 +112,11 @@
       </div>                
     </div> 
   </div>
-
+  <script>
+    var n = new Date();
+    var tanggal = n.toLocaleString();
+    document.getElementById("tanggal").innerHTML = tanggal;
+  </script>
   <!-- Framework7 library -->
   <script src="framework/framework7/framework7-bundle.min.js"></script>
   <!-- App routes -->
